@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche toda a altura da tela */
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px; /* Largura fixa */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os campos */
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50; /* Cor de foco */
+    outline: none; /* Remove contorno padrão */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Efeito hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

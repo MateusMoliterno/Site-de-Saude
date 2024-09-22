@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 20px; /* Espaçamento em todas as direções */
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Centraliza verticalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+.menu-icon {
+    font-size: 24px; /* Tamanho do ícone do menu */
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav.visible {
+    display: block;
+}
+
+nav ul {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+nav li {
+    list-style: none; /* Remove marcadores */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Espaçamento interno */
+    transition: background 0.3s; /* Transição suave */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito hover */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+section {
+    padding: 20px;
+    margin: 15px; /* Margem para separar seções */
+    background-color: white; /* Fundo branco para seções */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+h1, h2 {
+    color: #333; /* Cor escura para títulos */
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center; /* Centraliza o menu em telas grandes */
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+        background-color: #4CAF50; /* Fundo do menu em dispositivos móveis */
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
